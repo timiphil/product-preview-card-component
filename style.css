@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+ padding: 0px;
+},
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+:root {
+--Dark-cyan: hsl(158, 36%, 37%)
+--Cream: hsl(30, 38%, 92%)
+--Very-dark-blue: hsl(212, 21%, 14%)
+--Dark-grayish-blue: hsl(228, 12%, 48%)
+--White: hsl(0, 0%, 100%)
+}
+
+body {
+ background-color: #FAF0E6;
+}
+
+.whole-page {
+ background-color: var(--White);
+ margin: 20px auto;
+ width: 350px;
+ border-radius: 10px;
+ overflow: hidden;
+ box-sizing: border-box;
+}
+
+.desktop {
+ width: 100%;
+ display: block;
+ height: 50%;
+}
+
+.mobile {
+ display: none;
+}
+
+.text {
+ padding: 10px 30px 2px;
+}
+
+.perfume {
+ letter-spacing: 5px;
+ color: hsl(228, 12%, 48%);
+ filter: blur(0.3px);
+}
+
+.heading {
+ font-family: 'Fraunces', serif;
+ color: var(--Dark-grayish-blue);
+ line-height: 1em;
+}
+
+.two {
+ line-height: 25px;
+ filter: blur(0.3px);
+ color: hsl(228, 12%, 48%);
+ font-size: 14px;
+}
+
+.price {
+ color: var(--Dark-cyan);
+ font-size: 2.0rem;
+ font-family: 'Fraunces', serif;
+ position: relative;
+ color: hsl(158, 36%, 37%);
+}
+
+.price::after {
+ content: '$169.99';
+ font-size: 0.4em;
+ color: hsl(228, 12%, 48%);
+ text-decoration:line-through;
+ position: absolute;
+ transform: translate(4em, 1em);
+ filter: blur(0.3px);
+}
+
+button {
+ background-color:  var(--Dark-cyan);
+ color: var(--white);
+ justify-content: center;
+ border: none;
+ border-radius: 10px;
+ font-family: 'Montserrat' sans-serif;
+ padding: 15px 50px;
+ font-size: 14px;
+ align-items: center;
+ margin-bottom: 30px;
+ width: 100%;
+}
+
+button:hover,
+button:focus {
+background-color: hsl(158, 36%, 37%);
+cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    .whole-page {
+        display: flex;
+        width: 650px;
+        margin: 50px auto;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+     .desktop-img {
+        display: block;
+        width: 50%;
+    }
+
+     .heading {
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+        button {
+        margin-bottom: 50px;
+    }
+}
+
+.attribution {font-size: 11px; text-align: center;}
+.attribution a {color: hsl(228, 45%, 44%);}
+.attribution a:hover {color: red; text-decoration: none;}    
