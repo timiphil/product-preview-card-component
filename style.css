@@ -86,7 +86,7 @@ body {
 }
 
 button {
- background-color:  var(--Dark-cyan);
+ background-color: hsl(158, 36%, 37%);
  color: var(--white);
  justify-content: center;
  border: none;
@@ -129,6 +129,11 @@ cursor: pointer;
     }
 }
 
-.attribution {font-size: 11px; text-align: center;}
-.attribution a {color: hsl(228, 45%, 44%);}
-.attribution a:hover {color: red; text-decoration: none;}    
+.attribution {
+ font-size: 11px; 
+ text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+ color: hsl(228, 45%, 44%);
+} 
